@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles_register.css">
+    
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <div class="cont-search-logo">
+            <img id="logo" src="images/logo-mercado-liebre.svg" alt="logo" title="Mercado Liebre">
+            <input id=search-bar type="text" placeholder="Buscar producto...">
+            <button><i class="fas fa-search"></i></button>
+            <div class="center"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</div>
+        </div>
+        <nav class="nav-bar">
+            <ul type="none">
+                <li><a href="/">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul type="none">
+                <li><a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+        
+        <div id="menuAlign">
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <form class="container-registro" action="/" method="GET">
+    
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required minlength="3" maxlength="32">
+                
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required minlength="3" maxlength="16">
+                
+            <label for="fechaNacimiento"><h4>Fecha de nacimiento</h3></label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required >
+                
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required minlength="3">
+                
+            <label for="perfil-usuario"><h4>Perfil de usuario</h4></label>
+            <div class="container-perfil-usuario">
+                <p>Comprador   <input type="radio" name="perfil-usuario" value="comprador" required></p>
+                <p>Vendedor   <input type="radio" name="perfil-usuario" value="vendedor" required></p>
+            </div>
+                
+            <label for="intereses"><h4>Intereses</h4></label>
+            <div class="container-intereses">
+                <span><input type="checkbox" name="intereses" value="electro">  Electro</span>
+                <span><input type="checkbox" name="intereses" value="moda">  Moda</span>
+                <span><input type="checkbox" name="intereses" value="hogar">  Hogar</span>
+                <span><input type="checkbox" name="intereses" value="jugueteria">  Juguetería</span>
+                <span><input type="checkbox" name="intereses" value="vida-sana">  Vida sana</span>
+            </div>
+                
+            <label for="foto-perfil"><h4>Subí una foto de perfil</h4></label>
+            <input type="file" name="foto-perfil" id="foto-perfil" accept=".jpg">
+                
+            <input type="password" name="password" id="password" placeholder="Contraseña" required minlength="6">
+                
+            <input type="password" name="repeat-password" id="repeat-password" placeholder="Repetir contraseña" required minlength="6">
+            
+            <div class="container-buttons">
+                <button class="b-form" type="submit">Guardar</button>
+                <button class="b-form" type="reset">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    
+    
+</body>
+</html>

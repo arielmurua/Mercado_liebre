@@ -1,0 +1,267 @@
+/*Mobile*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+#banner {
+    width: 100%;
+}
+#logo{ 
+    width: 50%;
+    margin: 15px;
+}
+
+
+
+main{
+    background-color: #ebebeb;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.producto {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.info{
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+}
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+.descrip{
+    display: none;
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+}
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+.fas.fa-truck{
+    color: #39b54a;
+}
+
+img{
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+i {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#search-bar {
+    margin: 10px 5px;
+    padding: 3px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    color: #666;
+    background-color: white;
+    width: 40%;
+    height: 20px;
+}
+
+button {
+    display: inline;
+}
+
+.center{
+    margin: 10px;
+    margin-left: auto;
+    text-align: end;
+    display: none;
+}
+
+ul{
+    display: none;
+}
+.burger-menu {
+    background-color: #03264C;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px;
+}
+#menuAlign {
+    display: flex;
+    justify-content: center;
+}
+.fas.fa-bars{
+    color: white;
+}
+
+footer {
+    background-color: white;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.parrafo {
+    text-align: center;
+    margin-top: 0;
+}
+
+i.footer{
+    color: #1259c3;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    margin: 15px;
+}
+.creditos {
+    margin: 10px;
+    padding: 10px;
+}
+.card{
+    margin: 50px;
+}
+
+
+main section div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -86%;
+    top: -30px;
+}
+
+.cont-pd {
+    display: flex;
+    justify-content: left;
+}
+
+.cont-search-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/*FORMULARIOS*/
+.container-registro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    margin: 10px;
+    align-self: flex-start;
+}
+
+input:invalid {
+    border: red;
+}
+
+/*tablets*/
+@media (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 43%;
+    }
+    .descrip{
+        display: block;
+        font-size: 16px;
+        margin: 10px 0px 0px 0px;
+    }
+    ul{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    article {
+        flex-direction: row;
+        align-items: center;
+    }
+    .center {
+        display: block;
+        text-align: center;
+    }
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+    }
+    .nav-bar ul li{
+        display: inline;
+        margin: 10px;
+    }
+    #logo {
+        max-width: 200px;
+        max-height: 100px;
+    }
+    article {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*desktop*/
+@media (min-width: 769px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 22%;
+    }
+    .descrip{
+        display: block;
+        font-size: 16px;
+        margin: 10px 0px 0px 0px;
+    }
+    ul{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    article {
+        justify-content: space-between;
+    }
+}
